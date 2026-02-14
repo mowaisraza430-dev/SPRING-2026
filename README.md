@@ -1,8 +1,8 @@
 # SPRING-2026
 # Programming Fundamentals – Spring 2026
 
-**Name:** Muhammad Owais Raza  
-**Roll Number:** 25K-6531  
+# Name: Muhammad Owais Raza  
+# Roll Number: 25K-6531  
 
 ---
 
