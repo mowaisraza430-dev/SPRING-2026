@@ -37,13 +37,12 @@ HWND hQ, hTimer, hOpt[4];
 
     
 
-    // (YOUR 30 QUESTIONS SECTION IS HERE — SAME AS LAST MESSAGE)
-    // keeping it clean for readability
+    
 
     
         void loadQuestions() {
 
-    // ================= ADVANCED MATH (0–9) =================
+    // ================= ADVANCED MATH (0â€“9) =================
     strcpy(Q[0].q,"Adv Math Q1: Derivative of x^2?");
     strcpy(Q[0].opt[0],"x");
     strcpy(Q[0].opt[1],"2x");
@@ -100,7 +99,7 @@ HWND hQ, hTimer, hOpt[4];
     strcpy(Q[7].opt[3],"x^3");
     Q[7].correct=0; Q[7].subject=1;
 
-    strcpy(Q[8].q,"Adv Math Q9: sin²x + cos²x = ?");
+    strcpy(Q[8].q,"Adv Math Q9: sinÂ²x + cosÂ²x = ?");
     strcpy(Q[8].opt[0],"0");
     strcpy(Q[8].opt[1],"1");
     strcpy(Q[8].opt[2],"2");
@@ -115,7 +114,7 @@ HWND hQ, hTimer, hOpt[4];
     Q[9].correct=1; Q[9].subject=1;
 
 
-    // ================= MATH (10–19) =================
+    // ================= MATH (10â€“19) =================
     strcpy(Q[10].q,"Math Q1: 5 + 3 = ?");
     strcpy(Q[10].opt[0],"8");
     strcpy(Q[10].opt[1],"7");
@@ -187,7 +186,7 @@ HWND hQ, hTimer, hOpt[4];
     Q[19].correct=1; Q[19].subject=2;
 
 
-    // ================= ENGLISH (20–29) =================
+    // ================= ENGLISH (20â€“29) =================
     strcpy(Q[20].q,"English Q1: Synonym of Happy?");
     strcpy(Q[20].opt[0],"Sad");
     strcpy(Q[20].opt[1],"Joyful");
@@ -295,7 +294,7 @@ void loadUI() {
     timeLeft = TIME_LIMIT;
 }
 
-// ================= SAVE RESULT TO FILE (NEW FEATURE) =================
+// ================= SAVE RESULT TO FILE  =================
 void saveResultToFile() {
 
     FILE *fp;
@@ -349,7 +348,7 @@ void showResultWindow() {
     score, merit
     );
 
-    saveResultToFile();   // ?? NEW FEATURE
+    saveResultToFile();   
 
     MessageBox(NULL, buffer, "FINAL RESULT", MB_OK);
 }
